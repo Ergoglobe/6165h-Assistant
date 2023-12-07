@@ -1,0 +1,24 @@
+<div>
+
+    <label for="student-name">
+        First, MI, Last
+    </label>
+    <input id="student-name" type="text" (keyup)="setStudentName($event)">
+    
+    <label for="student-pronoun">
+        Pronoun
+    </label>
+
+    <select name="student-pronoun" (change)="setStudentPronoun($event)">
+        <option disabled selected value></option>
+        <option value="He is">He is</option>
+        <option value="She is">She is</option>
+        <option value="They are">They are</option>
+    </select>
+    
+    <label for="student-certificate-sought">
+        Certificate Sought
+    </label>
+    <input id="student-certificate-sought" type="text" (keyup)="setStudentCertificateSought($event)">
+
+</div>
