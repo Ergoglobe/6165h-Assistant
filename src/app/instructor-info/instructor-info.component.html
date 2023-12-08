@@ -1,1 +1,18 @@
-{{EndorsementDate}} {{Instructor.Name}} {{Instructor.CertificateNumber}} {{Instructor.CertificateType}} Exp. {{Instructor.CertificateExpiration}}
+<div>
+
+    <label for="endorsement-date">Date</label>
+    <input type="date" id="endorsement-date" (change)="setDate($event)">
+
+    <label for="instructor-name">Instructor Name</label>
+    <input type="text" id="instructor-name" placeholder="J. J. Jones" (keyup)="setName($event)">
+
+    <label for="certificate-number">Certificate Number</label>
+    <input type="number" id="certificate-number" placeholder="987654321" (keyup)="setNumber($event)">
+
+    <label for="certificate-type">Certificate Type</label>
+    <input type="text" id="certificate-type" placeholder="CFI/CFII/MEI" (keyup)="setType($event)">
+
+    <label for="certificate-expiration">Certificate Expiration</label>
+    <input type="date" id="certificate-expiration" (change)="setExpiration($event)">
+
+</div>

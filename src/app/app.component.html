@@ -1,16 +1,21 @@
-<app-instructor-info></app-instructor-info>
+<app-instructor-info (dateEmitter)="updateEndorsementDate($event)" (instructorEmitter)="updateInstructor($event)"></app-instructor-info>
 <app-student-info (studentNameEmitter)="updateStudentName($event)" (studentPronounEmitter)="updateStudentPronoun($event)" (studentCertificateSoughtEmitter)="updateStudentCertificateSought($event)"></app-student-info>
 
 <div>Prerequisites for the Practical Test Endorsements</div>
 
-<app-endorsement number="A.1" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
+<app-endorsement number="A.1" [InstructorCredentials]="InstructorCredentials" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
 <mat-divider></mat-divider>
-<app-endorsement number="A.2" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
+<app-endorsement number="A.2" [InstructorCredentials]="InstructorCredentials" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
 
 
 <div>Student Pilot Endorsements</div>
 
-
+<app-endorsement number="A.3" [InstructorCredentials]="InstructorCredentials" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
+<mat-divider></mat-divider>
+<app-endorsement number="A.4" [InstructorCredentials]="InstructorCredentials" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
+<mat-divider></mat-divider>
+<app-endorsement number="A.5" [InstructorCredentials]="InstructorCredentials" [studentName]="studentName" [studentPronoun]="studentPronoun" [studentCertificateSought]="studentCertificateSought"></app-endorsement>
+<mat-divider></mat-divider>
 
 
 
